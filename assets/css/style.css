@@ -122,13 +122,15 @@ a {
     margin-right: 4vw;
 }
 
-.nav__link_purple {
+.nav__link {
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 160%;
+}
 
+.nav__link_purple {
     color: #5222D0;
 }
 
