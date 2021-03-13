@@ -1,0 +1,160 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.main {
+    height: 100vh;
+}
+
+.main_background-img {
+    background: url(../images/background-pic.svg) no-repeat right;
+    background-size: 50% auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5vh 7vw;
+}
+
+.header__title {
+    display: flex;
+}
+
+.header__sign {
+    position: relative;
+    left: -10px;
+
+    height: auto;
+    width: 5vh;
+}
+
+.header__logo {
+    height: auto;
+    width: 20vh;
+}
+
+.header__button {
+    font-size: 1rem;
+}
+
+.button {
+    padding: 10px 20px;
+
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+
+    background: #5222D0;
+    border-radius: 100px;
+    border: none;
+}
+
+.section {
+    display: grid;
+
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+
+.section_introducing {
+    width: 40%;
+}
+
+.section__hd {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: black;
+}
+
+.section__lead {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+    color: #000000;
+}
+
+.section__button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 270px;
+    height: 84px;
+    margin-top: 5vh;
+
+    font-weight: bolder;
+
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.nav {
+    margin: 15vh 0 0 7vw;
+}
+
+.nav__list {
+    display: flex;
+
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 4vw;
+}
+
+.nav__link_purple {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+    color: #5222D0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    grid-template-rows: 3fr 2fr;
+}
+
+.feature__pic {
+    width: 365px;
+    height: 270px;
+}
+
+.feature {
+    width: 365px;
+}
+
+.feature__pic_scientific {
+    background: url(../images/scientist.png) no-repeat;
+}
+
+.feature__pic_robotic {
+    background: url(../images/robot.png) no-repeat;
+}
+
+.feature__pic_studying {
+    background: url(../images/student.png) no-repeat;
+}
