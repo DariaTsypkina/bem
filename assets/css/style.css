@@ -4,24 +4,29 @@
     box-sizing: border-box;
 }
 
+/* Удалить подчеркивание ссылок */
 a {
     text-decoration: none;
 }
 
+/* Ширина изображений */
 .img {
     width: 100%;
     max-width: 100%;
 }
 
+/* Страница */
 .main {
     height: 100vh;
 }
 
+/* Фон первой страницы */
 .main_background-img {
     background: url(../images/background-pic.svg) no-repeat right;
     background-size: 50% auto;
 }
 
+/* Шапка */
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,10 +34,12 @@ a {
     margin: 5vh 7vw;
 }
 
+/* Заголовок шапки */
 .header__title {
     display: flex;
 }
 
+/* Картинка лого в шапке */
 .header__sign {
     position: relative;
     left: -10px;
@@ -41,15 +48,18 @@ a {
     width: 5vh;
 }
 
+/* Текстовое лого в шапке */
 .header__logo {
     height: auto;
     width: 20vh;
 }
 
+/* Кнопка Корзина в шапке */
 .header__button {
     font-size: 1rem;
 }
 
+/* Общий стиль кнопок */
 .button {
     padding: 10px 20px;
 
@@ -63,6 +73,7 @@ a {
     border: none;
 }
 
+/* Раздел */
 .section {
     display: grid;
 
@@ -70,10 +81,12 @@ a {
     margin-right: 9vw;
 }
 
+/* Раздел вводный */
 .section_introducing {
     width: 40%;
 }
 
+/* Заголовок раздела */
 .section__hd {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
@@ -83,6 +96,7 @@ a {
     color: black;
 }
 
+/* Лид-текст раздела */
 .section__lead {
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
@@ -93,11 +107,8 @@ a {
     color: #000000;
 }
 
+/* Кнопка Купить */
 .section__button {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
     width: 270px;
     height: 84px;
     margin-top: 5vh;
@@ -108,55 +119,138 @@ a {
     line-height: 35px;
 }
 
+/* Меню нижней навигации */
 .nav {
-    margin: 15vh 0 0 7vw;
+    margin: 15vh 0 10vh 7vw;
 }
 
+/* Список навигации */
 .nav__list {
     display: flex;
 
     list-style-type: none;
 }
 
+/* Элемент списка навигации */
 .nav__item {
     margin-right: 4vw;
 }
 
+/* Ссылка навигации */
 .nav__link {
     font-family: 'Roboto Slab', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 160%;
 }
 
+/* Ссылка навигации фиолетовая */
 .nav__link_purple {
     color: #5222D0;
 }
 
+/* Возможности сетка */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
     grid-template-rows: 3fr 2fr;
+    column-gap: 4vw;
+    row-gap: 2vh;
 }
 
+/* Картинка возможности */
 .feature__pic {
-    width: 365px;
+    width: 100%;
     height: 270px;
 }
 
+/* Размер блока возможности */
 .feature {
     width: 365px;
+    height: fit-content;
 }
 
+/* Картинка ученого */
 .feature__pic_scientific {
     background: url(../images/scientist.png) no-repeat;
 }
 
+/* Картинка робота */
 .feature__pic_robotic {
     background: url(../images/robot.png) no-repeat;
 }
 
+/* Картинка студента */
 .feature__pic_studying {
     background: url(../images/student.png) no-repeat;
+}
+
+/* Заголовки возможностей */
+.feature__title,
+.subscription__title {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    line-height: 120%;
+}
+
+/* Цвет заголовков */
+.feature__title {
+    color: black;
+}
+
+.subscription__title {
+    color: white;
+}
+
+/* Текст возможности */
+.feature__text {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 160%;
+
+    color: #000000;
+}
+
+/* Блок Подписки */
+.subscription {
+    display: flex;
+    flex-direction: column;
+
+    width: 365px;
+    height: 256px;
+    padding: 0 20px;
+
+    background: #EC615B;
+}
+
+/* Форма подписки */
+.subscription__input {
+    width: 323px;
+    height: 50px;
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 160%;
+
+    color: #000000;
+}
+
+/* Кнопка подписки */
+.subscription__button {
+    width: fit-content;
+
+    margin-top: 2vh;
+}
+
+/* Ссылки навигационного меню на второй странице_серые */
+.nav__link_gray {
+    color: black;
+    padding-bottom: 10vh;
 }
